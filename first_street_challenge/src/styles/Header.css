@@ -1,3 +1,7 @@
 header {
   border: 1px solid var(--red);
 }
+
+.test {
+  color: var(--red);
+}
