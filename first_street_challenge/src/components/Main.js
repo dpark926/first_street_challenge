@@ -1,11 +1,11 @@
 import React from 'react';
-import mainStyles from '../styles/Main.css'
+import styles from '../styles/Main.scss'
 
 function Main () {
   return (
     <main>
       <h1>Main</h1>
-      <div className={ mainStyles.test }>test</div>
+      <div className={ styles.test }>test</div>
     </main>
   )
 }
