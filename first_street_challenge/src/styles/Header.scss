@@ -27,15 +27,12 @@ header {
       @include links;
       color: $white;
 
-      ul {
-        list-style-type: none;
-
-        li {
-          display: inline-block;
-          margin-left: 20px;
-          margin-right: 20px;
-        }
+      li {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
       }
+
     }
 
     .profileContainer {
