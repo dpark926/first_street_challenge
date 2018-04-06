@@ -5,14 +5,12 @@ import Splash from './components/Splash';
 import Main from './components/Main';
 import Footer from './components/Footer';
 // CSS
-import styles from './App.scss'
-// Images
-import headerImg from './assets/hero-image.png';
+import style from './App.scss'
 
 class App extends Component {
   render() {
     return (
-      <div className={ styles.app }>
+      <div className={ style.app }>
         <Splash />
         <Main />
         <Footer />

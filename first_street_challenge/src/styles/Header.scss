@@ -1,9 +1,9 @@
 @import './shared/variables';
 
 header {
-  // border: 1px solid yellow;
   margin-left: 50px;
   margin-right: 50px;
+  z-index: 2;
 
   .headerContainer {
     display: flex;
@@ -11,20 +11,15 @@ header {
     align-items: center;
 
     .logoContainer {
-      // position: absolute;
-      // border: 1px solid blue;
       order: 0;
       flex-grow: 1;
     }
 
     .headerButton {
       display: none;
-      // border: 1px solid blue;
-
     }
 
     .linkContainer {
-      // border: 1px solid blue;
       order: 1;
       flex-grow: 5;
       text-align: right;

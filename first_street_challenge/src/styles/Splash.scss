@@ -1,7 +1,11 @@
 .splash {
   background-image: url('../assets/hero-image.png');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   font-weight: normal;
+  height: 400px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
