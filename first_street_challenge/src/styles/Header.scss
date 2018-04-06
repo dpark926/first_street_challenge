@@ -1,12 +1,14 @@
+@import './shared/variables';
+
 header {
   border: 1px solid var(--red);
 
-  h1 {
-    color: blue;
+  img {
+    color: $blueish;
   }
 
   .test {
-    color: var(--red);
+    color: $redish;
     font-size: 22px;
   }
 }

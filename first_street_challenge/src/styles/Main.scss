@@ -1,7 +1,13 @@
+@import './shared/variables';
+
 main {
   border: 1px solid var(--black);
 }
 
 .test {
   color: var(--black);
+}
+
+h1 {
+  @include heading-1;
 }

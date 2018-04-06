@@ -1,0 +1,42 @@
+$redish: #EE2D1C;
+$blackish: #4C4C51;
+$blueish: #88939E;
+$white: #FFF;
+
+@mixin button {
+  background-color: $redish;
+  min-height: 55px;
+  text-align: center;
+  color: $white;
+}
+
+@mixin heading-1 {
+  font-size: 48px;
+  line-height: 48px;
+  color: $white;
+}
+
+@mixin heading-2 {
+  font-size: 36px;
+  line-height: 36px;
+  color: $blackish;
+}
+
+@mixin paragraph {
+  font-size: 22px;
+  line-height: 28px;
+  color: $blueish;
+}
+
+@mixin links {
+  font-size: 22px;
+  line-height: 28px;
+  color: $blueish;
+}
+
+@mixin onHover {
+  font-size: 22px;
+  line-height: 28px;
+  color: $blackish;
+}
+

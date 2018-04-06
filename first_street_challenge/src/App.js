@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-// import './App.scss';
 
 // Components
 import Header from './components/Header';
