@@ -14,7 +14,7 @@ p {
   font-weight: 300;
 }
 
-button {
+.mainButton {
   @include button;
 
   &:hover {

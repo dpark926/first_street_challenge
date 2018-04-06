@@ -1,24 +1,62 @@
 @import './shared/variables';
 
 header {
-  border: 1px solid var(--red);
+  // border: 1px solid yellow;
+  margin-left: 50px;
+  margin-right: 50px;
 
   .headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-  }
+    .logoContainer {
+      // position: absolute;
+      // border: 1px solid blue;
+      order: 0;
+      flex-grow: 1;
+    }
 
-  .logoContainer {
-    // position: absolute;
-  }
+    .headerButton {
+      display: none;
+      // border: 1px solid blue;
 
-  .profileContainer {
-    // position: absolute;
-    width: 50px;
-  }
+    }
 
-  .test {
-    color: $redish;
-    font-size: 22px;
+    .linkContainer {
+      // border: 1px solid blue;
+      order: 1;
+      flex-grow: 5;
+      text-align: right;
+
+      @include links;
+      color: $white;
+
+      ul {
+        list-style-type: none;
+
+        li {
+          display: inline-block;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .profileContainer {
+      width: 50px;
+      height: 50px;
+      order: 2;
+      flex-grow: 1;
+
+      .profilePicImg {
+        width: 50px;
+        height: 50px;
+        border: 2px solid $white;
+        border-radius: 25px;
+      }
+    }
+
   }
 }
 

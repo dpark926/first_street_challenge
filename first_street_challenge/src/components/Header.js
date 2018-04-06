@@ -12,10 +12,10 @@ function Header () {
             <img src={ logo }></img>
           </a>
         </div>
-        <button>
+        <button className={ style.headerButton }>
           <span></span>
         </button>
-        <div>
+        <div className={ style.linkContainer }>
           <ul>
             <li>Account</li>
             <li>Help</li>
@@ -23,7 +23,7 @@ function Header () {
         </div>
         <div className={ style.profileContainer }>
           <a href='#'>
-            <img src={ profilePic }></img>
+            <img src={ profilePic } className={ style.profilePicImg }></img>
           </a>
         </div>
       </nav>
