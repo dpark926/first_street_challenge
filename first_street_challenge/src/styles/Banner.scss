@@ -1,0 +1,9 @@
+@import './shared/variables';
+
+button {
+  @include button;
+
+  &:hover {
+    @include onHover;
+  }
+}

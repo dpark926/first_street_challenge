@@ -6,8 +6,12 @@ $white: #FFF;
 @mixin button {
   background-color: $redish;
   min-height: 55px;
+  font-size: 22px;
   text-align: center;
   color: $white;
+  border-radius: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 @mixin heading-1 {

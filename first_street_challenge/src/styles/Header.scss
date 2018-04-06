@@ -3,6 +3,14 @@
 header {
   border: 1px solid var(--red);
 
+  .headerContainer {
+
+  }
+
+  .logo {
+    position: absolute;
+  }
+
   img {
     color: $blueish;
   }
