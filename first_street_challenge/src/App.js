@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
 // import './App.scss';
 
 // Components
@@ -21,4 +22,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default hot(module)(App);
