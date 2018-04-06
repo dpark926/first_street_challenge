@@ -1,5 +1,19 @@
 @import './shared/variables';
 
+.banner {
+
+}
+
+.bannerHeader {
+  @include heading-1;
+}
+
+p {
+  @include paragraph;
+  color: $white;
+  font-weight: 300;
+}
+
 button {
   @include button;
 

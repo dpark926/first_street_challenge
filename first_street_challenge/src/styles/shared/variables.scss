@@ -12,12 +12,15 @@ $white: #FFF;
   border-radius: 25px;
   padding-left: 25px;
   padding-right: 25px;
+  font-weight: 200;
+  border: none;
 }
 
 @mixin heading-1 {
   font-size: 48px;
   line-height: 48px;
   color: $white;
+  font-weight: 300;
 }
 
 @mixin heading-2 {
