@@ -1,11 +1,23 @@
 import React from 'react';
 import style from '../styles/Main.scss';
+import stockImg from '../assets/stockimage.png';
 
 function Main () {
   return (
-    <main>
-      <h1>Main</h1>
-      <div className={ style.test }>Main</div>
+    <main className={ style.mainContainer }>
+      <div className={ style.mainTop }>
+        <div className={ style.mainTopLeft }>
+          <h2 className={ style.mainTopHeader }>Video Title (from videos.json)</h2>
+          <p className={ style.mainTopPara }>Video Description (from videos.json)</p>
+        </div>
+        <div className={ style.mainTopRight }>
+          <img src={ stockImg }></img>
+        </div>
+      </div>
+      <div className={ style.mainBottom }>
+        <h2>Ready to have your cake and eat it too?</h2>
+        <p>Start by designing the experience you have in mind. We'll guide you through each step. If your experience meets the quality standards, you'll hear more about what's next.</p>
+      </div>
     </main>
   )
 }

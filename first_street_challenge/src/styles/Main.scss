@@ -1,9 +1,44 @@
 @import './shared/variables';
 
-main {
-  border: 1px solid var(--black);
-}
+.mainContainer {
+  padding: 50px;
 
-.test {
-  color: var(--black);
+  h2 {
+    @include heading-2;
+  }
+
+  p {
+    @include paragraph;
+  }
+
+  .mainTop {
+    // border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .mainTopLeft {
+      // border: 1px solid red;
+      text-align: left;
+      flex-grow: 2;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .mainTopRight {
+      // border: 1px solid red;
+      flex-grow: 1;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+
+  .mainBottom {
+
+  }
 }
