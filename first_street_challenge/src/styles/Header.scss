@@ -1,8 +1,9 @@
 @import './shared/variables';
 
 header {
-  margin-left: 50px;
-  margin-right: 50px;
+  // border: 1px solid red;
+  max-width: 1300px;
+  margin: auto;
   z-index: 2;
 
   .headerContainer {

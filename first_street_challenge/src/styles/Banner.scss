@@ -1,12 +1,14 @@
 @import './shared/variables';
 
 .banner {
+  // border: 1px solid red;
+  max-width: 1300px;
+  margin: auto;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  margin-top: -50px;
 }
 
 .bannerHeader {

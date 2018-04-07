@@ -1,14 +1,20 @@
 @import './shared/variables';
 
 .mainContainer {
-  padding: 50px;
+  // border: 1px solid red;
+  max-width: 1300px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   h2 {
     @include heading-2;
+    width: 100%;
   }
 
   p {
     @include paragraph;
+    width: 100%;
   }
 
   .mainTop {
@@ -20,7 +26,7 @@
     .mainTopLeft {
       // border: 1px solid red;
       text-align: left;
-      flex-grow: 2;
+      flex-grow: 5;
       padding-left: 50px;
       padding-right: 50px;
     }
@@ -32,13 +38,21 @@
       padding-right: 50px;
 
       img {
-        width: 400px;
+        // width: 400px;
       }
     }
+
+
   }
 
-
   .mainBottom {
+    // border: 1px solid blue;
 
+    &:before {
+      content: "";
+      display: block;
+      // border: 1px solid green;
+      height: 50px;
+    }
   }
 }
