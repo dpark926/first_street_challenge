@@ -17,8 +17,12 @@ function Header () {
         </button>
         <div className={ style.linkContainer }>
           <ul>
-            <li>Account</li>
-            <li>Help</li>
+            <a href='#'>
+              <li>Account</li>
+            </a>
+            <a href='#'>
+              <li>Help</li>
+            </a>
           </ul>
         </div>
         <div className={ style.profileContainer }>

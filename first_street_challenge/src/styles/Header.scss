@@ -24,13 +24,15 @@ header {
       flex-grow: 5;
       text-align: right;
 
-      @include links;
-      color: $white;
-
       li {
+        @include links;
+        color: $white;
         display: inline-block;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 70px;
+
+        &:hover {
+          @include onHover;
+        }
       }
 
     }
@@ -46,6 +48,10 @@ header {
         height: 50px;
         border: 2px solid $white;
         border-radius: 25px;
+
+        &:hover {
+          border: 2px solid $blackish;
+        }
       }
     }
 
