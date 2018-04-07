@@ -11,16 +11,22 @@
 
 .bannerHeader {
   @include heading-1;
+  margin-bottom: 33px;
+  font-size: 56px;
 }
 
 p {
   @include paragraph;
   color: $white;
   font-weight: 300;
+  width: 60%;
+  line-height: 32px;
+  margin: 22px auto;
 }
 
 .mainButton {
   @include button;
+  margin-top: 11px;
 
   &:hover {
     @include onHover;
