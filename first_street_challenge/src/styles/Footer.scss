@@ -1,7 +1,71 @@
-footer {
-  border: 1px solid var(--blue);
-}
+@import './shared/variables';
 
-.test {
-  color: var(--blue);
+.footerContainer {
+  // border: 1px solid var(--blue);
+  max-width: 1300px;
+  margin: auto;
+
+  .footerTop {
+    // border: 1px solid blue;
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: row;
+
+    .footerTopLinks {
+      // border: 1px solid red;
+      display: inline-block;
+      width: 200px;
+      text-align: left;
+
+      .footerTopHeader {
+        // border: 1px solid green;
+        @include paragraph;
+        color: $redish;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      li {
+        @include paragraph;
+
+        &:hover {
+          color: $blackish;
+        }
+      }
+
+    }
+  }
+
+  .footerBottom {
+    border-top: 1px solid #E8E8E8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+
+    .logoContainer {
+      order: 0;
+      flex-grow: 1;
+    }
+
+    .linkContainer {
+      order: 1;
+      flex-grow: 10;
+      text-align: right;
+
+      ul {
+        li {
+          @include paragraph;
+          display: inline-block;
+          margin-left: 20px;
+          margin-right: 20px;
+
+          &:hover {
+            color: $blueish;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,20 +1,35 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-// import './App.scss';
-
 // Components
-import Header from './components/Header';
+import Splash from './components/Splash';
 import Main from './components/Main';
 import Footer from './components/Footer';
-
 // CSS
-import styles from './App.scss'
+import style from './App.scss'
+
+// import jsonData from './videos.json';
 
 class App extends Component {
+  // constructor () {
+  //   super()
+  //
+  //   this.state = {
+  //     data: jsonData,
+  //   }
+  // }
+  //
+  // componentWillMount = () => {
+  //   this.setState({
+  //     data: jsonData
+  //   })
+  // }
+
   render() {
+    // console.log(jsonData);
+
     return (
-      <div className={ styles.app }>
-        <Header />
+      <div className={ style.app }>
+        <Splash />
         <Main />
         <Footer />
       </div>

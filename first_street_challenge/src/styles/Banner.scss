@@ -1,0 +1,39 @@
+@import './shared/variables';
+
+.banner {
+  // border: 1px solid red;
+  max-width: 1300px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-top: -50px;
+}
+
+.bannerHeader {
+  @include heading-1;
+  margin-bottom: 33px;
+  font-size: 56px;
+  letter-spacing: 1px;
+}
+
+p {
+  @include paragraph;
+  color: $white;
+  font-weight: 300;
+  width: 60%;
+  line-height: 32px;
+  margin: 22px auto;
+  letter-spacing: 1px;
+}
+
+.mainButton {
+  @include button;
+  margin-top: 11px;
+
+  &:hover {
+    @include onHover;
+  }
+}
