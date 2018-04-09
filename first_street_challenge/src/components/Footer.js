@@ -9,19 +9,35 @@ function Footer () {
         <div className={ style.footerTopLinks }>
           <h5 className={ style.footerTopHeader }>Fakesite</h5>
           <ul>
-            <li>About us</li>
-            <li>Press</li>
-            <li>Policies</li>
-            <li>Help</li>
+            <a href='#'>
+              <li>About us</li>
+            </a>
+            <a href='#'>
+              <li>Press</li>
+            </a>
+            <a href='#'>
+              <li>Policies</li>
+            </a>
+            <a href='#'>
+              <li>Help</li>
+            </a>
           </ul>
         </div>
         <div className={ style.footerTopLinks }>
           <h5 className={ style.footerTopHeader }>Account</h5>
           <ul>
-            <li>Edit Profile</li>
-            <li>Friends</li>
-            <li>Social</li>
-            <li>Delete Profile</li>
+            <a href='#'>
+              <li>Edit Profile</li>
+            </a>
+            <a href='#'>
+              <li>Friends</li>
+            </a>
+            <a href='#'>
+              <li>Social</li>
+            </a>
+            <a href='#'>
+              <li>Delete Profile</li>
+            </a>
           </ul>
         </div>
       </div>
@@ -33,9 +49,15 @@ function Footer () {
         </div>
         <div className={ style.linkContainer }>
           <ul>
-            <li>Terms</li>
-            <li>Privacy</li>
-            <li>Site Map</li>
+            <a href='#'>
+              <li>Terms</li>
+            </a>
+            <a href='#'>
+              <li>Privacy</li>
+            </a>
+            <a href='#'>
+              <li>Site Map</li>
+            </a>
           </ul>
         </div>
       </div>

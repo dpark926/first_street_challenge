@@ -29,6 +29,18 @@
       flex-grow: 5;
       padding-left: 50px;
       padding-right: 50px;
+
+      h2 {
+        &:hover {
+          color: $blueish;
+        }
+      }
+
+       p {
+         &:hover {
+           color: $blackish;
+         }
+       }
     }
 
     .mainTopRight {
@@ -45,31 +57,28 @@
         // overflow: hidden;
         position: relative;
 
-        >div {
-          // border: 1px solid green;
+        // border: 1px solid green;
+        &:before {
+          content:"";
+          display: block;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 99%;
+          background-color: rgba(238, 45, 28, .5);
+        }
 
-          &:before {
-            content:"";
-            display: block;
-            height: 100%;
-            position: absolute;
-            // top: 0;
-            // left: 0;
-            width: 100%;
-            height: 99%;
-            background-color: rgba(238, 45, 28, .5);
-          }
-
-          &:after {
-            content:url('../assets/playbtn.png');
-            // width: 30%;
-            // background-color: rgba(238, 45, 28, .2);
-            border-radius: 25px;
-            z-index: 2;
-            top: 0;
-            left: 0;
-            position: absolute;
-          }
+        &:after {
+          content:url('../assets/playbtn.png');
+          // width: 30%;
+          // background-color: rgba(238, 45, 28, .2);
+          border-radius: 25px;
+          z-index: 2;
+          top: 25%;
+          left: 40%;
+          position: absolute;
         }
 
         img {

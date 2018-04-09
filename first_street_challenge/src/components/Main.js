@@ -7,14 +7,16 @@ function Main () {
     <main className={ style.mainContainer }>
       <article className={ style.mainTop }>
         <div className={ style.mainTopLeft }>
-          <h2 className={ style.mainTopHeader }>Video Title (from videos.json)</h2>
-          <p className={ style.mainTopPara }>Video Description (from videos.json)</p>
+          <a href='#'>
+            <h2 className={ style.mainTopHeader }>Video Title (from videos.json)</h2>
+          </a>
+          <a href='#'>
+            <p className={ style.mainTopPara }>Video Description (from videos.json)</p>
+          </a>
         </div>
         <figure className={ style.mainTopRight }>
           <a href='#'>
-            <div>
-              <img src={ stockImg }></img>
-            </div>
+            <img src={ stockImg }></img>
           </a>
         </figure>
       </article>
