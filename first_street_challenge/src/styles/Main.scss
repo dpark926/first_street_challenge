@@ -37,6 +37,14 @@
       }
 
        p {
+         width: 370px;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         max-height: 140px;
+         margin: 0;
+         // border: 1px solid red;
+
          &:hover {
            color: $blackish;
          }
@@ -85,6 +93,14 @@
           // width: 400px;
           background-color: blue;
           // width: 250px;
+        }
+
+        picture {
+          img {
+            width: 463px;
+            height: 262px;
+            border: 1px solid red;
+          }
         }
 
 
