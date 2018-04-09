@@ -7,8 +7,12 @@ import Footer from './components/Footer';
 // CSS
 import style from './App.scss'
 
+import jsonData from './videos.json';
+
 class App extends Component {
   render() {
+    console.log(jsonData);
+
     return (
       <div className={ style.app }>
         <Splash />
