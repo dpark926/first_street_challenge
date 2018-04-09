@@ -7,19 +7,25 @@
   // padding-top: 50px;
   // padding-bottom: 50px;
 
+
   h2 {
     @include heading-2;
     width: 100%;
-
-    @media only screen and (max-width: 768px) {
-      // border: 1px solid red;
-      font-size: 22px;
-    }
   }
 
   p {
     @include paragraph;
     width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .mainTop {
@@ -33,25 +39,45 @@
       // border: 1px solid red;
       flex-direction: column-reverse;
       width: 100%;
+      padding-top: 25px;
     }
 
     .mainTopLeft {
       // border: 1px solid red;
-      text-align: left;
-      max-width: 50%;
-      width: 50%;
+
       // flex-grow: 1;
       // margin-left: 50px;
       // padding-left: 50px;
       // padding-right: 50px;
 
+      h2 {
+        @media only screen and (max-width: 768px) {
+          // border: 1px solid red;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 22px;
+        }
+
+        @media only screen and (min-width: 768px) {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 22px;
+          width: 100%;
+        }
+      }
+
       @media only screen and (max-width: 768px) {
-        // border: 1px solid red;
         width: 100%;
         max-width: 100%;
         text-align: center;
         display: block;
         // order: 2;
+      }
+
+      @media only screen and (min-width: 768px) {
+        text-align: left;
+        width: 50%;
+        max-width: 50%;
       }
 
       h2 {
@@ -61,21 +87,33 @@
       }
 
        p {
-         width: 600px;
-         white-space: nowrap;
-         overflow: hidden;
-         text-overflow: ellipsis;
-         max-height: 140px;
-         margin: 0;
+         // width: 600px;
+
          // border: 1px solid red;
 
          @media only screen and (max-width: 768px) {
            width: 100%;
            max-height: 160px;
            font-size: 16px;
-           line-height: 20px;
+           line-height: 23px;
            white-space: normal;
            overflow: hidden;
+         }
+
+         @media only screen and (min-width: 768px) {
+           font-size: 18px;
+           // width: 300px;
+           max-width: 350px;
+           white-space: nowrap;
+           overflow: hidden;
+           text-overflow: ellipsis;
+           max-height: 140px;
+           margin: 0;
+         }
+
+         @media only screen and (min-width: 1200px) {
+           max-width: 600px;
+           // border: 1px solid red;
          }
 
          &:hover {
@@ -88,21 +126,33 @@
       // border: 1px solid red;
       // width: 50%;
       margin: 0;
-      flex-grow: 1;
+      // flex-grow: 1;
       // padding-left: 50px;
       // padding-right: 50px;
-      margin-left: 100px;
-      margin-right: 60px;
+
       position: relative;
-      max-width: 50%;
 
       @media only screen and (max-width: 768px) {
-        // border: 1px solid red;
         width: 100%;
         display: block;
         // order: 1;
         margin: 0;
         max-width: 100%;
+      }
+
+      @media only screen and (min-width: 768px) {
+        max-width: 50%;
+        // width: 50%;
+        padding-left: 25px;
+        // padding-right: 25px;
+        // margin-left: 25px;
+        // margin-right: 25px;
+      }
+
+      @media only screen and (min-width: 1200px) {
+        // margin-left: 50px;
+        margin: auto;
+        // margin-right: 60px;
       }
 
       a {
@@ -145,9 +195,7 @@
         }
 
         img {
-          display: block;
-          max-width: 400px;
-          max-height: 350px;
+          // display: block;
           // width: 463px;
           // height: 262px;
           // border: 1px solid red;
@@ -155,7 +203,17 @@
           @media only screen and (max-width: 768px) {
             width: 100%;
             // max-width: 375px;
-            max-height: 400px;
+            // max-height: 400px;
+          }
+
+          @media only screen and (min-width: 768px) {
+            max-width: 350px;
+            // max-height: 350px;
+          }
+
+          @media only screen and (min-width: 992px) {
+            max-width: 450px;
+            // max-height: 350px;
           }
         }
       }
@@ -170,6 +228,18 @@
       display: block;
       // border: 1px solid green;
       height: 50px;
+    }
+
+    h2 {
+      @media only screen and (max-width: 768px) {
+        font-size: 1.25em;
+      }
+    }
+
+    p {
+      @media only screen and (max-width: 768px) {
+        font-size: 1.125em;
+      }
     }
   }
 }

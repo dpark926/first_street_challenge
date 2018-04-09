@@ -26,6 +26,10 @@
       width: 200px;
       text-align: left;
 
+      @media only screen and (max-width: 768px) {
+        width: 50%;
+      }
+
       .footerTopHeader {
         // border: 1px solid green;
         @include paragraph;
@@ -74,8 +78,11 @@
     .logoContainer {
       order: 0;
       flex-grow: 1;
-      @media screen and (max-width: 768px) {
-        width: 50px;
+
+      img {
+        @media screen and (max-width: 768px) {
+          width: 50px;
+        }
       }
     }
 
