@@ -12,9 +12,9 @@ function Header () {
             <img src={ logo }></img>
           </a>
         </div>
-        <button className={ style.headerButton }>
-          <span></span>
-        </button>
+        <div className={ style.headerButton }>
+          <span>O</span>
+        </div>
         <div className={ style.linkContainer }>
           <ul>
             <a href='#'>

@@ -8,4 +8,9 @@
   height: 600px;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 0;
+    max-height: 480px;
+  }
 }
