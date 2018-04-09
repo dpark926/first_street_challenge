@@ -17,15 +17,17 @@ function Main () {
           </a>
         </div>
         <figure className={ style.mainTopRight }>
-          <a href={ video.url }>
-            {/* <img src={ stockImg }></img> */}
+          <div>
+            <a href={ video.url }>
+              {/* <img src={ stockImg }></img> */}
 
-            <picture>
-              <source type='image/webp' srcset='https:\/\/i.vimeocdn.com\/video\/689215514_640.webp' />
-              <source type='image/jpg' srcset='https:\/\/i.vimeocdn.com\/video\/680550256_640.jpeg' />
-              <img src='https:\/\/i.vimeocdn.com\/video\/680550256_200x150.jpeg'></img>
-            </picture>
-          </a>
+              <picture>
+                <source type='image/webp' srcset={ video.thumbnail_large } />
+                <source type='image/jpg' srcset={ video.thumbnail_large.slice(0, -4).concat('jpeg') } />
+                <img src={ video.thumbnail_large.slice(0, -4).concat('jpeg') }></img>
+              </picture>
+            </a>
+          </div>
         </figure>
       </article>
     )
