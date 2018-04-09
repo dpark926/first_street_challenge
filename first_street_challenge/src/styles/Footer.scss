@@ -5,11 +5,20 @@
   max-width: 1300px;
   margin: auto;
 
+  @media only screen and (max-width: 768px) {
+    margin: 0 10px;
+  }
+
   .footerTop {
     // border: 1px solid blue;
     padding: 50px 25px;
     display: flex;
     flex-direction: row;
+
+    @media only screen and (max-width: 768px) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
 
     .footerTopLinks {
       // border: 1px solid red;
@@ -23,6 +32,11 @@
         color: $redish;
         margin-top: 0;
         margin-bottom: 10px;
+
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+          font-size: 1em;
+        }
       }
 
       li {
@@ -30,6 +44,14 @@
 
         &:hover {
           color: $blackish;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 1em;
+          letter-spacing: 0;
+          line-height: 12px;
+          margin: 11px auto;
+          text-align: center;
         }
       }
 
@@ -44,9 +66,17 @@
     padding-top: 25px;
     padding-bottom: 50px;
 
+    @media screen and (max-width: 768px) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
     .logoContainer {
       order: 0;
       flex-grow: 1;
+      @media screen and (max-width: 768px) {
+        width: 50px;
+      }
     }
 
     .linkContainer {
@@ -63,6 +93,13 @@
 
           &:hover {
             color: $blueish;
+          }
+
+          @media screen and (max-width: 768px) {
+            font-size: 1em;
+            letter-spacing: 0;
+            margin-left: 11px;
+            margin-right: 11px;
           }
         }
       }
