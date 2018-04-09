@@ -13,7 +13,7 @@ function Header () {
           </a>
         </div>
         <div className={ style.headerButton }>
-          <span>O</span>
+          <i class="fas fa-align-justify"></i>
         </div>
         <div className={ style.linkContainer }>
           <ul>
