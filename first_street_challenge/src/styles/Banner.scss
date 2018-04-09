@@ -9,14 +9,22 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
-  margin-top: -50px;
+  margin-top: -75px;
 }
 
 .bannerHeader {
   @include heading-1;
   margin-bottom: 33px;
-  font-size: 56px;
+  font-size: 50px;
   letter-spacing: 1px;
+
+  @media screen and (max-width: 768px) {
+    // font-size: 40px;
+    font-size: 2.4375em;
+    letter-spacing: 0;
+    margin: 0;
+    font-weight: 400;
+  }
 }
 
 p {
@@ -27,6 +35,14 @@ p {
   line-height: 32px;
   margin: 22px auto;
   letter-spacing: 1px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.1875em;
+    // font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin: 11px auto;
+  }
 }
 
 .mainButton {
@@ -35,5 +51,23 @@ p {
 
   &:hover {
     @include onHover;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1em;
+    margin: 0;
+    min-height: 36px;
+    border-radius: 25px;
+    padding-left: 18px;
+    padding-right: 18px;
+
+    &:hover {
+      font-size: 1em;
+      margin: 0;
+      min-height: 36px;
+      border-radius: 25px;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
   }
 }
