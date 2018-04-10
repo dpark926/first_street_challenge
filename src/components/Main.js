@@ -4,7 +4,6 @@ import stockImg from '../assets/stockimage.png';
 import jsonData from '../videos.json';
 
 function Main () {
-  console.log(jsonData);
   const videos = jsonData.map( video => {
     return (
       <article className={ style.mainTop }>

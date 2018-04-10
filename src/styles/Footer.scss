@@ -1,7 +1,6 @@
 @import './shared/variables';
 
 .footerContainer {
-  // border: 1px solid var(--blue);
   max-width: 1300px;
   margin: auto;
 
@@ -10,7 +9,6 @@
   }
 
   .footerTop {
-    // border: 1px solid blue;
     padding: 50px 25px;
     display: flex;
     flex-direction: row;
@@ -21,7 +19,6 @@
     }
 
     .footerTopLinks {
-      // border: 1px solid red;
       display: inline-block;
       width: 200px;
       text-align: left;
@@ -31,7 +28,6 @@
       }
 
       .footerTopHeader {
-        // border: 1px solid green;
         @include paragraph;
         color: $redish;
         margin-top: 0;

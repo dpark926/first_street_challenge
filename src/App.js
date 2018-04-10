@@ -7,26 +7,8 @@ import Footer from './components/Footer';
 // CSS
 import style from './App.scss'
 
-// import jsonData from './videos.json';
-
 class App extends Component {
-  // constructor () {
-  //   super()
-  //
-  //   this.state = {
-  //     data: jsonData,
-  //   }
-  // }
-  //
-  // componentWillMount = () => {
-  //   this.setState({
-  //     data: jsonData
-  //   })
-  // }
-
   render() {
-    // console.log(jsonData);
-
     return (
       <div className={ style.app }>
         <Splash />

@@ -1,12 +1,8 @@
 @import './shared/variables';
 
 .mainContainer {
-  // border: 1px solid red;
   max-width: 1300px;
   margin: auto;
-  // padding-top: 50px;
-  // padding-bottom: 50px;
-
 
   h2 {
     @include heading-2;
@@ -29,30 +25,25 @@
   }
 
   .mainTop {
-    // border: 1px solid blue;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 50px;
 
     @media only screen and (max-width: 768px) {
-      // border: 1px solid red;
       flex-direction: column-reverse;
       width: 100%;
       padding-top: 25px;
     }
 
     .mainTopLeft {
-      // border: 1px solid red;
-
-      // flex-grow: 1;
-      // margin-left: 50px;
-      // padding-left: 50px;
-      // padding-right: 50px;
 
       h2 {
+        &:hover {
+          color: $blueish;
+        }
+
         @media only screen and (max-width: 768px) {
-          // border: 1px solid red;
           margin-top: 10px;
           margin-bottom: 10px;
           font-size: 22px;
@@ -64,6 +55,43 @@
           font-size: 22px;
           width: 100%;
         }
+
+        @media only screen and (min-width: 768px) {
+          font-size: 28px;
+        }
+      }
+
+      p {
+        @media only screen and (max-width: 768px) {
+          width: 95%;
+          max-height: 160px;
+          font-size: 16px;
+          line-height: 23px;
+          white-space: normal;
+          overflow: hidden;
+        }
+
+        @media only screen and (min-width: 768px) {
+          font-size: 18px;
+          max-width: 350px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-height: 140px;
+          margin: 0;
+        }
+
+        @media only screen and (min-width: 992px) {
+          max-width: 400px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+          max-width: 600px;
+        }
+
+        &:hover {
+          color: $blackish;
+        }
       }
 
       @media only screen and (max-width: 768px) {
@@ -71,7 +99,6 @@
         max-width: 100%;
         text-align: center;
         display: block;
-        // order: 2;
       }
 
       @media only screen and (min-width: 768px) {
@@ -79,90 +106,32 @@
         width: 50%;
         max-width: 50%;
       }
-
-      h2 {
-        &:hover {
-          color: $blueish;
-        }
-      }
-
-       p {
-         // width: 600px;
-
-         // border: 1px solid red;
-
-         @media only screen and (max-width: 768px) {
-           width: 100%;
-           max-height: 160px;
-           font-size: 16px;
-           line-height: 23px;
-           white-space: normal;
-           overflow: hidden;
-         }
-
-         @media only screen and (min-width: 768px) {
-           font-size: 18px;
-           // width: 300px;
-           max-width: 350px;
-           white-space: nowrap;
-           overflow: hidden;
-           text-overflow: ellipsis;
-           max-height: 140px;
-           margin: 0;
-         }
-
-         @media only screen and (min-width: 1200px) {
-           max-width: 600px;
-           // border: 1px solid red;
-         }
-
-         &:hover {
-           color: $blackish;
-         }
-       }
     }
 
     .mainTopRight {
-      // border: 1px solid red;
-      // width: 50%;
       margin: 0;
-      // flex-grow: 1;
-      // padding-left: 50px;
-      // padding-right: 50px;
-
       position: relative;
 
       @media only screen and (max-width: 768px) {
         width: 100%;
         display: block;
-        // order: 1;
         margin: 0;
         max-width: 100%;
       }
 
       @media only screen and (min-width: 768px) {
         max-width: 50%;
-        // width: 50%;
         padding-left: 25px;
-        // padding-right: 25px;
-        // margin-left: 25px;
-        // margin-right: 25px;
       }
 
       @media only screen and (min-width: 1200px) {
-        // margin-left: 50px;
         margin: auto;
-        // margin-right: 60px;
       }
 
       a {
         display: block;
-        // width: 100%;
-        // height: 0;
-        // overflow: hidden;
         position: relative;
 
-        // border: 1px solid green;
         &:before {
           content:"";
           display: block;
@@ -171,7 +140,6 @@
           top: 0;
           left: 0;
           width: 100%;
-          // max-width: 400px;
           height: 100%;
           background: linear-gradient(rgba(238, 45, 28, .6), rgba(255, 255, 255, .4));
         }
@@ -179,14 +147,11 @@
         &:hover {
           &:before {
             background: linear-gradient(rgba(238, 45, 28, .6), rgba(0, 0, 0, .2));
-
           }
         }
 
         &:after {
           content:url('../assets/playbtn.png');
-          // width: 30%;
-          // background-color: rgba(238, 45, 28, .2);
           border-radius: 25px;
           z-index: 2;
           top: calc(50% - 3.5em);
@@ -195,25 +160,16 @@
         }
 
         img {
-          // display: block;
-          // width: 463px;
-          // height: 262px;
-          // border: 1px solid red;
-
           @media only screen and (max-width: 768px) {
             width: 100%;
-            // max-width: 375px;
-            // max-height: 400px;
           }
 
           @media only screen and (min-width: 768px) {
             max-width: 350px;
-            // max-height: 350px;
           }
 
           @media only screen and (min-width: 992px) {
-            max-width: 450px;
-            // max-height: 350px;
+            max-width: 440px;
           }
         }
       }
@@ -221,12 +177,15 @@
   }
 
   .mainBottom {
-    // border: 1px solid blue;
+
+    @media only screen and (max-width: 768px) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
 
     &:before {
       content: "";
       display: block;
-      // border: 1px solid green;
       height: 50px;
     }
 
@@ -241,5 +200,6 @@
         font-size: 1.125em;
       }
     }
+
   }
 }
