@@ -52,12 +52,16 @@
         @media only screen and (min-width: 768px) {
           margin-top: 10px;
           margin-bottom: 10px;
-          font-size: 22px;
+          font-size: 28px;
           width: 100%;
         }
 
-        @media only screen and (min-width: 768px) {
-          font-size: 28px;
+        @media only screen and (min-width: 992px) {
+          font-size: 38px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+          font-size: 48px;
         }
       }
 
@@ -83,10 +87,12 @@
 
         @media only screen and (min-width: 992px) {
           max-width: 400px;
+          font-size: 20px;
         }
 
         @media only screen and (min-width: 1200px) {
           max-width: 600px;
+          font-size: 22px;
         }
 
         &:hover {
