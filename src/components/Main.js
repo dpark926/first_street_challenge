@@ -18,8 +18,6 @@ function Main () {
         <figure className={ style.mainTopRight }>
           <div>
             <a href={ video.url }>
-              {/* <img src={ stockImg }></img> */}
-
               <picture>
                 <source type='image/webp' srcset={ video.thumbnail_large } />
                 <source type='image/jpg' srcset={ video.thumbnail_large.slice(0, -4).concat('jpeg') } />
