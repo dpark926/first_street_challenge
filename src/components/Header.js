@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from '../styles/Header.scss';
 import logo from '../assets/logo.png';
 import profilePic from '../assets/profile-pic.jpeg';
@@ -8,27 +9,27 @@ function Header () {
     <header>
       <nav className={ style.headerContainer }>
         <div className={ style.logoContainer }>
-          <a href='#'>
-            <img src={ logo }></img>
-          </a>
+          <Link to='/'>
+            <img src={ logo } alt='logo'></img>
+          </Link>
         </div>
         <div className={ style.headerButton }>
-          <i class="fas fa-align-justify"></i>
+          <i className="fas fa-align-justify"></i>
         </div>
         <div className={ style.linkContainer }>
           <ul>
-            <a href='#'>
+            <Link to='/'>
               <li>Account</li>
-            </a>
-            <a href='#'>
+            </Link>
+            <Link to='/'>
               <li>Help</li>
-            </a>
+            </Link>
           </ul>
         </div>
         <div className={ style.profileContainer }>
-          <a href='#'>
-            <img src={ profilePic } className={ style.profilePicImg }></img>
-          </a>
+          <Link to='/'>
+            <img src={ profilePic } className={ style.profilePicImg } alt='profile'></img>
+          </Link>
         </div>
       </nav>
     </header>

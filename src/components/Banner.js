@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from '../styles/Banner.scss';
 
 function Banner () {
@@ -7,9 +8,9 @@ function Banner () {
       <div>
         <h1 className={ style.bannerHeader }>The world's greatest fake site</h1>
         <p>Create the world's greatest fake site and enjoy the breeze of fresh air when you complete it</p>
-        <a href='#'>
+        <Link to='/'>
           <button className={ style.mainButton }>Do something awesome</button>
-        </a>
+        </Link>
       </div>
     </section>
   )

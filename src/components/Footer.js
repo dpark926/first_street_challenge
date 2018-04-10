@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from '../styles/Footer.scss';
 import logo from '../assets/logo.png';
 
@@ -9,55 +10,55 @@ function Footer () {
         <div className={ style.footerTopLinks }>
           <h5 className={ style.footerTopHeader }>Fakesite</h5>
           <ul>
-            <a href='#'>
+            <Link to='/'>
               <li>About us</li>
-            </a>
-            <a href='#'>
+            </Link>
+            <Link to='/'>
               <li>Press</li>
-            </a>
-            <a href='#'>
+            </Link>
+            <Link to='/'>
               <li>Policies</li>
-            </a>
-            <a href='#'>
+            </Link>
+            <Link to='/'>
               <li>Help</li>
-            </a>
+            </Link>
           </ul>
         </div>
         <div className={ style.footerTopLinks }>
           <h5 className={ style.footerTopHeader }>Account</h5>
           <ul>
-            <a href='#'>
+            <Link to='/'>
               <li>Edit Profile</li>
-            </a>
-            <a href='#'>
+            </Link>
+            <Link to='/'>
               <li>Friends</li>
-            </a>
-            <a href='#'>
+            </Link>
+            <Link to='/'>
               <li>Social</li>
-            </a>
-            <a href='#'>
+            </Link>
+            <Link to='/'>
               <li>Delete Profile</li>
-            </a>
+            </Link>
           </ul>
         </div>
       </div>
       <div className={ style.footerBottom }>
         <div className={ style.logoContainer }>
-          <a href='#'>
-            <img src={ logo }></img>
-          </a>
+          <Link to='/'>
+            <img src={ logo } alt='logo'></img>
+          </Link>
         </div>
         <div className={ style.linkContainer }>
           <ul>
-            <a href='#'>
+            <Link to='/'>
               <li>Terms</li>
-            </a>
-            <a href='#'>
+            </Link>
+            <Link to='/'>
               <li>Privacy</li>
-            </a>
-            <a href='#'>
+            </Link>
+            <Link to='/'>
               <li>Site Map</li>
-            </a>
+            </Link>
           </ul>
         </div>
       </div>
