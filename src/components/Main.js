@@ -6,22 +6,22 @@ import jsonData from '../videos.json';
 function Main () {
   const videos = jsonData.map( video => {
     return (
-      <article className={ style.mainTop }>
+      <article className={ style.mainTop } key={ video.id }>
         <div className={ style.mainTopLeft }>
-          <a href={ video.url }>
+          <a href={ video.url } target='_blank'>
             <h2 className={ style.mainTopHeader }>{ video.title }</h2>
           </a>
-          <a href={ video.url }>
+          <a href={ video.url } target='_blank'>
             <p className={ style.mainTopPara } dangerouslySetInnerHTML={{ __html: video.description }}></p>
           </a>
         </div>
         <figure className={ style.mainTopRight }>
           <div>
-            <a href={ video.url }>
+            <a href={ video.url } target='_blank'>
               <picture>
-                <source type='image/webp' srcset={ video.thumbnail_large } />
-                <source type='image/jpg' srcset={ video.thumbnail_large.slice(0, -4).concat('jpeg') } />
-                <img src={ video.thumbnail_large.slice(0, -4).concat('jpeg') }></img>
+                <source type='image/webp' srcSet={ video.thumbnail_large } />
+                <source type='image/jpg' srcSet={ video.thumbnail_large.slice(0, -4).concat('jpeg') } />
+                <img src={ video.thumbnail_large.slice(0, -4).concat('jpeg') } alt={ video.title }></img>
               </picture>
             </a>
           </div>
@@ -43,7 +43,7 @@ function Main () {
         </div>
         <figure className={ style.mainTopRight }>
           <a href='#'>
-            <img src={ stockImg }></img>
+            <img src={ stockImg } alt='video'></img>
           </a>
         </figure>
       </article>
