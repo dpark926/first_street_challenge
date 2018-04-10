@@ -3,7 +3,7 @@ import Header from './Header';
 import Banner from './Banner';
 import style from '../styles/Splash.scss';
 
-function Splash () {
+const Splash = () => {
   return (
     <div className={ style.splash }>
       <Header />
@@ -12,4 +12,4 @@ function Splash () {
   )
 }
 
-export default Splash;
+export default Splash

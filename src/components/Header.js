@@ -4,7 +4,7 @@ import style from '../styles/Header.scss';
 import logo from '../assets/logo.png';
 import profilePic from '../assets/profile-pic.jpeg';
 
-function Header () {
+const Header = () => {
   return (
     <header>
       <nav className={ style.headerContainer }>

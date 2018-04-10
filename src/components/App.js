@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 // Components
-import Splash from './components/Splash';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import Splash from './Splash';
+import Main from './Main';
+import Footer from './Footer';
 // CSS
-import style from './App.scss'
+import style from '../styles/App.scss';
 
 class App extends Component {
   render() {

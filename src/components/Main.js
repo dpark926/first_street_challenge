@@ -1,9 +1,9 @@
 import React from 'react';
 import style from '../styles/Main.scss';
 import stockImg from '../assets/stockimage.png';
-import jsonData from '../videos.json';
+import jsonData from '../assets/videos.json';
 
-function Main () {
+const Main = () => {
   const videos = jsonData.map( video => {
     return (
       <article className={ style.mainTop } key={ video.id }>
